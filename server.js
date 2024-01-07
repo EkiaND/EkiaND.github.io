@@ -1,11 +1,13 @@
+import config from "./config.js";
+
 const express = require('express');
 const axios = require('axios');
-const cors = require('cors'); // Importez le module cors
+const cors = require('cors'); // Importe le module cors
 
 const app = express();
-app.use(cors()); // Utilisez le middleware cors
+app.use(cors()); // Utilise le middleware cors
 
-const apiKey = 'RGAPI-92124958-9f92-4b13-ae84-f729c50d7088'; // Remplacez ceci avec votre clé API de Riot Games
+const apiKey = config.apiKey; 
 
 let playersData = {};
 
