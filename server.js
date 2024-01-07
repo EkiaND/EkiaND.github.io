@@ -1,5 +1,3 @@
-import config from "./config.js";
-
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors'); // Importe le module cors
@@ -7,7 +5,7 @@ const cors = require('cors'); // Importe le module cors
 const app = express();
 app.use(cors()); // Utilise le middleware cors
 
-const apiKey = config.apiKey; 
+const apiKey = "RGAPI-92124958-9f92-4b13-ae84-f729c50d7088"; 
 
 let playersData = {};
 
